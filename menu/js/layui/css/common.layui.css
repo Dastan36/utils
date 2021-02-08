@@ -1,0 +1,603 @@
+/**
+ * layui 通用样式调整
+ * @author SJP
+ */
+
+html, body.layui-body-content {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 0; /* 解决jsp中空格占位的问题 */
+	background: #fff;
+}
+
+/* 自定会议图标字体 */
+.wb {
+	display: inline-block;
+}
+
+/* padding 15px */
+.layui-padding-15 {
+	padding: 15px
+}
+
+/* 高度 100% */
+.layui-height-100 {
+	height: 100%;
+}
+
+.table-cell-tools-item {
+	font-size: 16px;
+	cursor: pointer;
+}
+.table-cell-tools-item:hover {
+	font-size: 18px;
+}
+
+.layui-form-selected dl{
+	font-size: 12px;
+}
+.layui-select-title{
+	font-size: 12px;
+}
+
+.label-content {
+	color: #000;
+}
+
+/* 添加引用的状态 红色 */
+.layui-elem-quote.layui-error {
+	border-left-color: var(--wb-color-red);
+}
+
+/* tab样式设置 */
+.layui-tab { height: 100%; }
+.layui-tab-item { height: 100%; }
+.layui-tab-content { padding: 0; }
+
+/* 按钮sm大小 */
+.layui-btn-fluid { margin-bottom: 1px; margin-top: 1px; }
+.layui-main .layui-form-checkbox i { top: 5px; }
+
+.layui-table, .layui-table-view {
+	margin: 0;
+}
+
+/* 调整按钮之间的间隔大小 */
+.layui-btn + .layui-btn,
+.layui-btn + .layui-dropdown,
+.layui-dropdown + .layui-btn {
+	margin-left: 5px;
+}
+.layui-dropdown-menu .layui-btn + .layui-btn {
+	margin-left: 0;
+}
+
+.layui-nav .layui-nav-item a i.fa,
+.layui-nav .layui-nav-item a i.layui-icon {
+	margin-right: 10px;
+}
+
+.layui-btn .fa {
+	margin-right: 3px;
+	vertical-align: middle;
+}
+
+/* 调整xmSelect中嵌入日期选择器时的样式 */
+.date xm-select .scroll-body {
+	margin-top: -5px;
+}
+
+.date xm-select .xm-body {
+	padding: 0;
+	border: none;
+	background-color: usnet;
+	box-shadow: none;
+	width: auto;
+}
+
+.date xm-select .layui-laydate-footer {
+	height: 26px;
+}
+/* 调整xmSelect中嵌入日期选择器时的样式 end*/
+
+/* 调整 dtree 中功能按钮之间的间距 */
+.ew-tree-table-cell-content a[lay-event] {
+	margin-right: 10px;
+}
+/* 调整 dtree 中功能按钮之间的间距 end */
+
+/* 调整 table 中功能按钮之间的间距 */
+.layui-table-cell .table-toolbar a {
+	margin-right: 10px;
+	font-size: 18px;
+}
+/* 调整 table 中功能按钮之间的间距 end */
+
+
+/* ----------------------------------布局样式 start--------------------------------------- */
+/* 定义左侧栏样式 */
+.layui-body-content>.layui-side {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	background-color: #fff;
+	transition: all .2s;
+}
+
+.layui-body-content>.layui-side>.layui-side-header {
+	border-bottom: 1px solid var(--wb-color-lightgray);
+	padding: 13px 10px 1px 15px;
+}
+
+.layui-body-content>.layui-side>.layui-side-header>.layui-side-header-title {
+	display: inline-block;
+	color: var(--wb-color-black);
+	font-size: 16px;
+	margin-bottom: 13px;
+}
+
+.layui-body-content>.layui-side>.layui-side-header>.layui-side-header-title>i {
+	margin-right: 5px;
+	color: var(--wb-theme-color);
+}
+
+.layui-body-content>.layui-side>.layui-side-header>.layui-side-header-title>.layui-side-header-toolbar {
+	position: absolute;
+	right: 10px;
+	margin-top: 2px;
+}
+
+.layui-body-content>.layui-side>.layui-side-header>.layui-side-header-title>.layui-side-header-toolbar>i {
+	margin-left: 6px;
+	cursor: pointer;
+}
+
+.layui-body-content>.layui-side>.layui-side-body {
+	width: calc(100% + 20px); /* 隐藏滚动条 */
+	height: calc(100% - 50px);
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+/* 定义左侧栏样式  结束 */
+
+
+/* 定义 拉伸div 开始 */
+.layui-body-content>.layui-resizer {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	width: 8px;
+	background: #fafafa;
+	cursor: e-resize;
+}
+
+.layui-body-content>.layui-resizer>.layui-resizer-toggler {
+	position: absolute;
+	top: calc(50% - 25px);
+	width: 100%;
+	height: 50px;
+	background: var(--wb-color-lightgray);
+	cursor: pointer;
+}
+
+.layui-body-content>.layui-resizer>.layui-resizer-toggler:hover {
+	background: var(--wb-theme-color);
+}
+
+.layui-body-content>.layui-resizer>.layui-resizer-toggler>i {
+	position: relative;
+	display: inline-block;
+	font-size: 12px;
+	top: 19px;
+	left: -2px;
+	color: var(--wb-color-black);
+}
+
+.layui-body-content>.layui-resizer>.layui-resizer-toggler:hover>i {
+	color: #fff;
+}
+
+.layui-body-content.side-open>.layui-resizer>.layui-resizer-toggler>i {
+	transform: rotate(180deg);
+}
+
+.layui-body-content.side-close>.layui-resizer:hover {
+	background: var(--wb-color-gray);
+}
+
+/* 定义 拉伸div 结束 */
+
+
+/* 定义 内容区域 开始 */
+.layui-body-content>.layui-content {
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.layui-body-content>.layui-content>.layui-content-header {
+	border-bottom: 1px solid var(--wb-color-lightgray);
+	padding: 10px 10px 1px 15px;
+}
+
+.layui-body-content>.layui-content>.layui-content-header>.layui-content-header-title {
+	display: inline-block;
+	color: var(--wb-color-black);
+	font-size: 16px;
+	margin-bottom: 13px;
+	margin-top: 3px;
+	margin-right: 15px;
+}
+
+.layui-body-content>.layui-content>.layui-content-header>.layui-content-header-title>i {
+	margin-right: 5px;
+	color: var(--wb-theme-color);
+}
+
+.layui-body-content>.layui-content>.layui-content-header>.search-content {
+	display: inline-block;
+	position: relative;
+	top: -3px;
+}
+
+.layui-body-content>.layui-content>.layui-content-header>.search-content>.layui-form-item {
+	margin-bottom: 0;
+}
+
+.layui-body-content>.layui-content>.layui-content-header>.search-content-more {
+	position: absolute;
+	left: 0;
+	width: calc(100% - 20px);
+	padding: 10px;
+	padding-top: 5px;
+	background: #fff;
+	z-index: 999;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.layui-body-content>.layui-content>.layui-content-header>.search-content-more>.layui-inline {
+	margin-top: 5px;
+}
+
+
+.layui-body-content>.layui-content>.layui-content-header>.layui-content-header-tools {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: inline-block;
+	margin-bottom: 13px;
+}
+
+.layui-body-content>.layui-content>.layui-content-body {
+	padding: 1px;
+}
+
+.layui-body-content>.layui-content>.layui-content-body>.search-content {
+	padding: 6px 3px 3px;
+}
+
+.layui-body-content>.layui-content>.layui-content-body>.search-content .layui-form-item{
+	margin-bottom:0;
+}
+
+.layui-body-content>.layui-content>.layui-content-body>.search-content .search-more {
+	position: absolute;
+	left: 0;
+	padding: 6px 3px 3px;
+	z-index: 1000;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+	width: calc(100% - 6px);
+	max-height: 200px;
+	overflow-y: auto;
+	display: none;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+/* 定义 内容区域 结束 */
+
+/* ----------------------------------布局样式 end--------------------------------------- */
+
+/* ----------------------------------表单样式调整 start--------------------------------------- */
+input, textarea {
+	font-size: 14px;
+}
+
+.layui-form-checkbox i {
+ 	top: 0px;
+}
+.layui-form-checkbox[lay-skin=primary] {
+ 	height: 30px !important;
+}
+
+/* 设置siwtch的主题颜色 */
+.switch-primary+.layui-form-onswitch {
+	border-color: var(--wb-theme-color) !important;
+	background-color: var(--wb-theme-color);
+	color: #fff;
+}
+
+/* 调整表格row默认高度 */
+.layui-table-view .layui-table td, .layui-table-view .layui-table th {
+	padding: 3px 0;
+}
+
+/* 调整intput 的默认高度 */
+.layui-input, .layui-select, .layui-textarea {
+	height: 30px;
+	line-height: 30px\9;
+}
+/* 调整intput 的默认高度 */
+.layui-form-label {
+	padding: 5px 10px;
+	font-size: 14px;
+}
+/* 解决checkbox偏上的问题 */
+.layui-table-cell .layui-form-checkbox[lay-skin="primary"] {
+	top: 5px;
+}
+
+/* 调整默认表行的之间的间隔 */
+.layui-form-item .layui-inline {
+	margin-bottom: 5px;
+	margin-right: 5px
+}
+
+.layui-layer-btn {
+	font-size: 14px;
+}
+.layui-layer-title {
+	font-size: 16px !important;
+}
+
+/* 限制下拉框的宽度和高度 */
+.layui-form-select dl {max-height:200px;max-width:150%;}
+
+.layui-form-switch {
+	margin-top: 5px;
+}
+
+.layui-input-block {
+	min-height: 30px;
+}
+
+/* 为input添加类似bootstrap的额外元素 */
+.layui-input-block-group>.layui-input-block-group-addon {
+	display: inline-block;
+	border: 1px solid #e6e6e6;
+	background: #eee;
+}
+
+.layui-input-block-group>.layui-input-block-group-addon:first-child {
+	border-right: 0;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	height: 22px;
+	vertical-align: bottom;
+	padding-top: 6px;
+	width: 23px;
+	padding-left: 7px;
+}
+
+.layui-input-block-group>.layui-input-block-group-addon:last-child {
+	border-left: 0;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	padding: 6px 7px 6px 6px;
+}
+
+.layui-input-block-group>.layui-input:not(:first-child):last-child,
+.layui-input-block-group>.layui-input:first-child:not(:last-child) {
+	width: calc(100% - 30px);
+	display: inline-block;
+	position: relative;
+	top: -6px;
+}
+
+.layui-input-block-group>.layui-input:not(:first-child):not(:last-child) {
+	width: calc(100% - 60px);
+	display: inline-block;
+}
+
+.layui-input-block-group>.layui-input-block-group-addon>i {
+	font-size: 16px;
+	color: #555;
+}
+/* 为input添加类似bootstrap的额为元素                  结束 */
+
+/* 设置一些组件的默认颜色为主题颜色 */
+.layui-form-onswitch {
+	border-color: var(--wb-theme-color);
+	 background-color: var(--wb-theme-color);
+}
+
+.layui-form-checked, .layui-form-checked:hover {
+	border-color: var(--wb-theme-color);
+}
+
+.layui-form-checked span, .layui-form-checked:hover span {
+	background-color: var(--wb-theme-color);
+}
+
+.layui-form-checked i, .layui-form-checked:hover i {
+	color: var(--wb-theme-color);
+}
+/* 设置一些组件的默认颜色为主题颜色        结束*/
+
+/* 修复layui日期控件点到年选择和月选择时有滚动条的问题 */
+.layui-laydate-list {
+	width: calc(100% - 20px) !important;
+	height: calc(100% - 20px) !important;
+}
+
+
+/* ----------------------------------表单样式调整 end--------------------------------------- */
+
+
+
+/* ---------------------------------------------下拉按钮样式 start-------------------------------------------------------------  */
+.layui-dropdown {
+	display: inline-block !important;
+}
+
+.layui-dropdown-menu {
+	display: none;
+	z-index: 100;
+	min-width: 100%;
+	min-height: 1px;
+	margin: 0;
+	padding: 0;
+	border-radius: 2px;
+	border: 1px solid #d2d2d2;
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+	list-style: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+
+.layui-dropdown-menu:before {
+	content: "\20";
+	position: absolute;
+	display: block;
+	background-color: transparent;
+	z-index: -1
+}
+
+.layui-dropdown-menu.is-show {
+	display: block
+}
+
+.layui-dropdown-menu[x-placement^=top] {
+	margin-bottom: 5px;
+	-webkit-box-shadow: 0 -1px 4px rgba(0, 0, 0, .12);
+	box-shadow: 0 -1px 4px rgba(0, 0, 0, .12)
+}
+
+.layui-dropdown-menu[x-placement^=top]:before {
+	bottom: -5px;
+	width: 100%;
+	height: 5px;
+	left: 0
+}
+
+.layui-dropdown-menu[x-placement^=right] {
+	margin-left: 5px
+}
+
+.layui-dropdown-menu[x-placement^=right]:before {
+	left: -5px;
+	width: 5px;
+	height: 100%;
+	top: 0
+}
+
+.layui-dropdown-menu[x-placement^=bottom] {
+	margin-top: 5px
+}
+
+.layui-dropdown-menu[x-placement^=bottom]:before {
+	top: -5px;
+	width: 100%;
+	height: 5px;
+	left: 0
+}
+
+.layui-dropdown-menu[x-placement^=left] {
+	margin-right: 5px
+}
+
+.layui-dropdown-menu[x-placement^=left]:before {
+	right: -5px;
+	width: 5px;
+	height: 100%;
+	top: 0
+}
+
+[x-out-of-boundaries] {
+	pointer-events: none;
+	visibility: hidden;
+	opacity: 0
+}
+
+.layui-anim-rightbit {
+	-webkit-animation-name: layui-rightbit;
+	animation-name: layui-rightbit
+}
+
+.layui-anim-leftbit {
+	-webkit-animation-name: layui-leftbit;
+	animation-name: layui-leftbit
+}
+
+.layui-anim-downbit {
+	-webkit-animation-name: layui-downbit;
+	animation-name: layui-downbit
+}
+
+@keyframes layui-rightbit { 
+	0% {
+		-webkit-transform: translate3d(30px, 0, 0);
+		transform: translate3d(30px, 0, 0);
+		opacity: .1
+	}
+}
+
+@keyframes layui-leftbit {
+	to {
+		-webkit-transform: translate3d(30px, 0, 0);
+		transform: translate3d(30px, 0, 0);
+		opacity: .1
+	}
+}
+
+@keyframes layui-downbit {
+	to {
+		-webkit-transform: translate3d(0, 30px, 0);
+		transform: translate3d(0, 30px, 0);
+		opacity: .3
+	}
+}
+
+/* 按钮之间的上下距离为0 */
+.layui-header .layui-btn-container .layui-btn {
+	margin-bottom: 0px !important;
+}
+/* 按钮之间边框为0 */
+.layui-dropdown .layui-btn-primary {
+	border: none;
+}
+
+.layui-dropdown-menu .layui-btn {
+	text-align: left;
+	height: 30px;
+	line-height: 30px
+}
+
+.layui-dropdown-menu .layui-btn:hover {
+	background-color: var(--wb-color-lightgray)
+}
+/* ---------------------------------------------下拉按钮样式 end--------------------------------------------------------------  */
+/* ---------------------------------------------页面滚动条样式 start-------------------------------------------------------------  */
+	
+.iScrollT ::-webkit-scrollbar, .iScrollT::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	overflow: auto;
+}
+
+.iScrollT ::-webkit-scrollbar-track-piece, .iScrollT::-webkit-scrollbar-track-piece
+	{
+	margin: 10px 0;
+	-webkit-border-radius: 4px;
+}
+
+.iScrollT ::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.4);
+	-webkit-border-radius: 4px;
+}
+/* ---------------------------------------------页面滚动条样式 end--------------------------------------------------------------  */

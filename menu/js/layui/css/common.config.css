@@ -1,0 +1,400 @@
+
+/* 默认主题 */
+:root {
+	/*主题颜色*/
+	--wb-theme-color: #357ca5;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #1e282d;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #303643;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #263238;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #2C3B41;
+	/*侧边栏子目录选中颜色*/
+	--wb-side-child-selected-background-color: #357ca5;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: rgba(255, 255, 255, .9);
+}
+
+/* 黑-经典 主题 就是默认主题，这里不用写 */
+body[data-theme=wb-theme-black2] {
+}
+
+/* 蓝色主题 */
+body[data-theme=wb-theme-blue] {
+	/*主题颜色*/
+	--wb-theme-color: #3c8dbc;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #3c8dbc;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #357ca5;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #263238;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #2C3B41;
+	/*侧边栏子目录选中颜色*/
+	--wb-side-child-selected-background-color: #3c8dbc;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: rgba(255, 255, 255, .9);
+}
+
+/* 紫色主题 */
+body[data-theme=wb-theme-purple] {
+	/*主题颜色*/
+	--wb-theme-color: #555299;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #555299;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #605ca8;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #263238;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #2C3B41;
+	/*侧边栏子目录选中颜色*/
+	--wb-side-child-selected-background-color: #555299;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: rgba(255, 255, 255, .9);
+}
+
+/* 绿色主题 */
+body[data-theme=wb-theme-green] {
+	/*主题颜色*/
+	--wb-theme-color: #008d4c;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #008d4c;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #00a65a;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #263238;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #2C3B41;
+	/*侧边栏子目录选中颜色*/
+	--wb-side-child-selected-background-color: #008d4c;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: rgba(255, 255, 255, .9);
+}
+
+/* 红色主题 */
+body[data-theme=wb-theme-red] {
+	/*主题颜色*/
+	--wb-theme-color: #d33724;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #d33724;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #dd4b39;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #263238;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #2C3B41;
+	/*侧边栏子目录选中颜色*/
+	--wb-side-child-selected-background-color: #d33724;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: rgba(255, 255, 255, .9);
+}
+
+/* 黄色主题 */
+body[data-theme=wb-theme-yellow] {
+	/*主题颜色*/
+	--wb-theme-color: #db8b0b;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #db8b0b;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #f39c12;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #263238;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #2C3B41;
+	/*侧边栏子目录选中颜色*/
+	--wb-side-child-selected-background-color: #db8b0b;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: rgba(255, 255, 255, .9);
+}
+
+/* 蓝灰-经典 主题 */
+body[data-theme=wb-theme-blue-light] {
+	/*主题颜色*/
+	--wb-theme-color: #254b83;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #254b83;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #2a579a;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #EAEDF1;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #F4F6F8;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-selected-background-color: #fff;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: #000;
+}
+
+/* 黑灰 */
+body[data-theme=wb-theme-black-light2] {
+	/*主题颜色*/
+	--wb-theme-color: #303643;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #303643;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #303643;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #EAEDF1;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #F4F6F8;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-selected-background-color: #fff;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: #000;
+}
+
+/* 紫灰 */
+body[data-theme=wb-theme-purple-light] {
+	/*主题颜色*/
+	--wb-theme-color: #555299;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #555299;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #605ca8;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #EAEDF1;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #F4F6F8;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-selected-background-color: #fff;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: #000;
+}
+
+/* 紫灰 */
+body[data-theme=wb-theme-green-light] {
+	/*主题颜色*/
+	--wb-theme-color: #008d4c;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #008d4c;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #00a65a;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #EAEDF1;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #F4F6F8;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-selected-background-color: #fff;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: #000;
+}
+
+/* 红灰 */
+body[data-theme=wb-theme-red-light] {
+	/*主题颜色*/
+	--wb-theme-color: #d33724;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #d33724;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #dd4b39;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #EAEDF1;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #F4F6F8;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-selected-background-color: #fff;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: #000;
+}
+
+/* 黄灰 */
+body[data-theme=wb-theme-yellow-light] {
+	/*主题颜色*/
+	--wb-theme-color: #db8b0b;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #db8b0b;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #f39c12;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #EAEDF1;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #F4F6F8;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-selected-background-color: #fff;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: #000;
+}
+
+/* 亮蓝（新） */
+body[data-theme=wb-theme-blue2] {
+	/*主题颜色*/
+	--wb-theme-color: #1648ab;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #1648ab;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #1951be;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #EAEDF1;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #F4F6F8;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-selected-background-color: #fff;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: #000;
+}
+
+/* 浅蓝（新） */
+body[data-theme=wb-theme-blue-light2] {
+	/*主题颜色*/
+	--wb-theme-color: #1681e5;
+	/*头部工具栏选中颜色*/
+	--wb-header-toolbar-selected-color: #1681e5;
+	/*头部工具栏背景颜色*/
+	--wb-header-toolbar-background-color: #1890ff;
+	/*头部工具栏文字颜色*/
+	--wb-header-toolbar-text-color: rgba(255, 255, 255, .9);
+	/*侧边栏背景颜色*/
+	--wb-side-background-color: #EAEDF1;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-background-color: #F4F6F8;
+	/*侧边栏子目录背景颜色*/
+	--wb-side-child-selected-background-color: #fff;
+	/*侧边栏字体颜色*/
+	--wb-side-text-color: #000;
+}
+
+/* 定义颜色参数 */
+:root {
+	/* 定义红色 */
+	--wb-color-red: #FF5722;
+	/* 定义绿色 */
+	--wb-color-green: #108c53;
+	/* 定义灰色 */
+	--wb-color-gray: #f3f3f3;
+	/* 定义银灰色 */
+	--wb-color-lightgray: #eee;
+	/* 定义黑色，一般用于字体颜色 */
+	--wb-color-black: rgb(68, 68, 68);
+}
+
+.text-red {
+	color: var(--wb-color-red);
+}
+
+.text-green {
+	color: var(--wb-color-green);
+}
+
+.text-black {
+	color: var(--wb-color-black);
+}
+
+.text-theme-color {
+	color: var(--wb-theme-color);
+}
+
+
+
+
+
+
+/* 设置layui中各个组件颜色随着主题颜色改变而改变 */
+
+.layui-btn-primary:hover {
+	border-color: var(--wb-theme-color);
+}
+
+.layui-btn-normal {
+	background-color: var(--wb-theme-color)
+}
+
+.layui-form-select dl dd.layui-this {
+	background-color: var(--wb-theme-color);
+}
+
+.layui-nav .layui-nav-child dd.layui-this a, .layui-nav-child dd.layui-this{
+	background-color: var(--wb-theme-color);
+}
+
+.layui-form-checkbox[lay-skin=primary]:hover i {
+	border-color: var(--wb-theme-color);
+}
+
+.layui-form-checked[lay-skin=primary] i {
+	border-color: var(--wb-theme-color) !important;
+	background-color: var(--wb-theme-color);
+}
+
+.layui-transfer-active .layui-btn {
+	background-color: var(--wb-theme-color);
+	border-color: var(--wb-theme-color);
+}
+
+.layui-form-radio>i:hover, .layui-form-radioed>i {
+	color: var(--wb-theme-color) !important;
+}
+
+.layui-btn {
+	background-color: var(--wb-theme-color);
+}
+
+.layui-btn-primary {
+	background: #fff;
+}
+
+.layui-laypage .layui-laypage-curr .layui-laypage-em {
+	background-color: var(--wb-theme-color);
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+	border-color: var(--wb-theme-color) !important;
+	background-color: var(--wb-theme-color) !important;
+}
+
+.layui-tab-title li .layui-tab-close:hover {
+	background-color: var(--wb-theme-color);
+}
+
+.layui-laydate .layui-laydate-list .layui-this,
+.layui-laydate .layui-laydate-content .layui-this {
+	background-color: var(--wb-theme-color) !important;
+}
+
+.layui-nav .layui-laydate .layui-this::after {
+	background-color: var(--wb-theme-color) !important;
+}
+
+.layui-nav .layui-this::after, 
+.layui-nav-bar, 
+.layui-nav-tree .layui-nav-itemed::after {
+	background-color: var(--wb-theme-color);
+}
+
+.layui-nav {
+	background-color: var(--wb-header-toolbar-background-color);
+}
+/* 设置layui中各个组件颜色随着主题颜色改变而改变            end*/
+
+
+
+

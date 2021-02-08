@@ -1,0 +1,65 @@
+.dtree-layui-ficon,
+.dtree-layui-icon {
+	color: var(--wb-color-black) !important;
+}
+
+.dtree-toolbar .layui-nav-child dd a i {
+	color: var(--wb-color-black) !important;
+}
+
+.dtree-toolbar.layui-nav .layui-nav-item a {
+	padding: 0 10px;	
+}
+
+.dtree-toolbar .layui-nav-child {
+	padding: 0;
+}
+
+.dtree-order {
+	display: none;
+	font-size: 16px;
+	position: absolute;
+	right: 0;
+	background: #fff;
+	padding: 0 5px;
+}
+
+.dtree-show-order .dtree-order {
+	display: inline-block;
+}
+
+.dtree-order i {
+	margin-right: 5px;
+	cursor: pointer;
+	height: 33px;
+	line-height: 33px;
+}
+
+.dtree-order i.wb {
+	margin-right: 0;
+}
+
+.dtree-order i:hover {
+	color: var(--wb-theme-color);
+}
+
+.node_text_color_blue{ 
+	color:blue !important; 
+} 
+.node_text_color_blue span{ 
+	color:blue !important; 
+}
+
+.node_text_color_green{ 
+	color:green; 
+}
+.node_text_color_green span{ 
+	color:green !important; 
+}
+
+.node_text_color_orange{ 
+	color:orange; 
+}
+.node_text_color_orange span{ 
+	color:orange !important; 
+}

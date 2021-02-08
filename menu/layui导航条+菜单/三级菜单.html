@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>layout 后台大布局 - Layui</title>
+    <link rel="stylesheet" href="../js/layui/css/layui.css" rel="external nofollow">
+    <script src="../js/layui/layui.js"></script>
+    <style>
+
+        /*layui child nav*/
+        .layui-nav-child {
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 65px;
+            min-width: 100%;
+            line-height: 36px;
+            padding: 5px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+            border: 1px solid #d2d2d2;
+            background-color: #fff;
+            z-index: 100;
+            border-radius: 2px;
+            white-space: nowrap;
+        }
+
+        /* 二级菜单颜色*/
+        .layui-nav .layui-nav-child a {
+            color: rgb(0, 0, 0);
+        }
+        /*二级菜单获取焦点颜色*/
+        .layui-nav .layui-nav-child a:hover {
+            background-color: deepskyblue;
+            color: rgb(0, 0, 0);
+        }
+
+        .layui-nav-child dd {
+            position: relative;
+        }
+
+        .layui-nav-child dd.layui-this {
+            background-color: transparent;
+            color:rgb(0, 0, 0);
+        }
+
+        .layui-nav .layui-nav-child dd.layui-this a {
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+        }
+
+        .layui-nav-child dd.layui-this:after {
+            display: none;
+        }
+
+        /*layui third level nav*/
+        .layui-nav-third-child {
+            display: none;
+            position: absolute;
+            left: 105px;
+            top: 25px;
+            min-width: 100%;
+            line-height: 36px;
+            padding: 5px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .12);
+            border: 1px solid #d2d2d2;
+            background-color: #fff;
+            z-index: 100;
+            border-radius: 2px;
+            white-space: nowrap;
+        }
+
+        /*三级菜单*/
+        .layui-nav .layui-nav-third-child a {
+            color: rgb(0, 0, 0);
+        }
+
+        .layui-nav .layui-nav-third-child a:hover {
+            background-color: deepskyblue;
+            color: rgb(0, 0, 0);
+        }
+
+        .layui-nav-third-child li {
+            position: relative;
+        }
+
+        .layui-nav-third-child li {
+            background-color: transparent;
+            color: white;
+        }
+
+        .layui-nav .layui-nav-third-child li.layui-this a {
+            background-color: deepskyblue;
+            color: white;
+        }
+
+        .layui-nav-third-child li:after {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="layui-nav">
+        <li class="layui-nav-item"><a href="#">控制台</a></li>
+        <li class="layui-nav-item"><a href="#">商品管理</a></li>
+        <li class="layui-nav-item"><a href="#">用户</a></li>
+        <li class="layui-nav-item">
+            <a href="javascript:;">其它系统</a>
+            <dl class="layui-nav-child">
+                <dd><a href="">邮件管理</a></dd>
+                <dd><a href="">消息管理</a></dd>
+                <dd><a href="">授权管理</a></dd>
+                <dd>
+                    <a href="javascript:;" class="third-class">其它系统2</a>
+                    <ol class="layui-nav-third-child">
+                        <li><a href="">邮件管理2</a></li>
+                        <li><a href="">消息管理2</a></li>
+                        <li><a href="">授权管理2</a></li>
+                    </ol>
+                </dd>
+                <dd>
+                    <a href="javascript:;" class="third-class">其它系统3</a>
+                    <ol class="layui-nav-third-child">
+                        <li><a href="">邮件管理3</a></li>
+                        <li><a href="">消息管理3</a></li>
+                        <li><a href="">授权管理3</a></li>
+                    </ol>
+                </dd>
+            </dl>
+        </li>
+    </ul>
+    <script>
+        //JavaScript代码区域
+        layui.use(['element', 'jquery'], function () {
+            var element = layui.element, $ = layui.jquery;
+            $(".layui-nav-third-child").hide();
+            $(".third-class").hover(function () {
+                $(this).next().show();
+            },function(){
+                $(".layui-nav-third-child").hide();
+            });
+        });
+    </script>
+</body>
+
+</html>
