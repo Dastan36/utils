@@ -1,0 +1,53 @@
+<html>
+    <script src="../js/jquery.min.js"></script>
+    <style>
+        li {
+            float: left;
+            list-style: none;
+            padding: 5px;
+        }
+        @keyframes hideIndex{
+            0%{ opacity: 0; transform: translate(800px, 0) }
+            100%{opacity: 1; transform: translate(0, 0) }
+        }
+        #carouselIframe div{
+            animation: hideIndex 0.5s;
+            -moz-animation: hideIndex  0.5s; /* Firefox */
+            -webkit-animation: hideIndex  0.5s; /* Safari and Chrome */
+            -o-animation: hideIndex  0.5s; /* Opera */
+        }
+        /* 隐藏滚轮这个问题还需要  在带入系统之后 看问题 */
+        ::-webkit-scrollbar {
+            /*隐藏滚轮*/
+            display: none;
+        }
+    </style>
+    <body>
+        <div id="carouselLi" style="position: absolute;bottom: 42px;z-index: 99; left: 50%;transform: translateX(-50%);">
+            <li id="li1" style="color: red;">菜鸟教程</li>
+            <li id="li2">百度一下</li>
+            <li id="li3">Echarts</li>
+        </div>
+        <div id="carouselIframe" style="width: 100%;height: 100%;">
+            <div id="frame1"><iframe src="https://www.runoob.com/" width="100%" height="100%" frameborder='no' border=0 marginwidth=0 marginheight=0 scrolling='no'></iframe></div>
+            <div id="frame2" style="display: none;"><iframe src="https://www.baidu.com/" width="100%" height="100%" frameborder='no' border=0 marginwidth=0 marginheight=0 scrolling='no'></iframe></div>
+            <div id="frame3" style="display: none;"><iframe src="https://echarts.apache.org/zh/index.html" width="100%" height="100%" frameborder='no' border=0 marginwidth=0 marginheight=0 scrolling='no'></iframe></div>
+        </div>
+    </body>
+    <script>
+        var num=1;
+         setInterval(function(){
+            num++;
+            if(num == 4){
+                num = 1;     
+            }
+            // 文字高亮
+            $("#carouselLi li").css("color","black");
+            $("#carouselLi #li"+num).css("color","red");
+            // iframe切换
+            // $("#carouselIframe div").css({"display":"none","overflow":"hidden"});
+            $("#carouselIframe div").css("display", "none");
+            $("#carouselIframe #frame"+num).css("display", "block");
+        },3000)
+    </script>
+</html>
